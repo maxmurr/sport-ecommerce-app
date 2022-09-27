@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SellerController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="storeNameLabel" text="StoreName">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="searchProductTextField" focusTraversable="false" prefHeight="25.0" prefWidth="228.0" promptText="Please Enter Product Name">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextField>
+                  <Button focusTraversable="false" mnemonicParsing="false" onAction="#searchProduct" prefHeight="25.0" prefWidth="75.0" styleClass="edit-button" stylesheets="@style.css" text="Search">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <MenuButton focusTraversable="false" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" styleClass="edit-button" stylesheets="@style.css" text="Featured">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#newest" text="Newest" />
+                        <MenuItem mnemonicParsing="false" onAction="#lowToHigh" text="Price: Low to High" />
+                        <MenuItem mnemonicParsing="false" onAction="#highToLow" text="Price: High to Low" />
+                     </items>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="458.0" prefWidth="800.0" style="-fx-background-color: white;">
+               <children>
+                  <Button focusTraversable="false" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAddButton" style="-fx-background-color: green;" styleClass="buy-button" stylesheets="@style.css" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ScrollPane layoutX="109.0" prefHeight="461.0" prefWidth="691.0">
+                     <content>
+                        <GridPane fx:id="grid">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" styleClass="header" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Sport" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="12.5" />
+               </HBox.margin>
+            </Label>
+            <Label text="Market" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" top="12.5" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="50.0" prefWidth="564.0" />
+            <Hyperlink focusTraversable="false" onAction="#handleProfileButton" text="My Account" textFill="WHITE">
+               <HBox.margin>
+                  <Insets top="12.5" />
+               </HBox.margin>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="814.0" style="-fx-background-color: white;">
+               <children>
+                  <Button focusTraversable="false" layoutX="739.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBackButton" stylesheets="@style.css" text="Back" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

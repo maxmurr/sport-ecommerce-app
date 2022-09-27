@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #202A35;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.LoginController">
+   <children>
+      <Pane layoutX="291.0" layoutY="179.0">
+         <children>
+            <Label layoutX="7.0" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" focusTraversable="false" layoutX="7.0" layoutY="50.0" prefHeight="30.0" prefWidth="212.0" promptText="username" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <PasswordField fx:id="passwordTextField" focusTraversable="false" layoutX="7.0" layoutY="100.0" prefHeight="26.0" prefWidth="212.0" promptText="password" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <Button focusTraversable="false" layoutX="7.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleLogInButton" prefHeight="30.0" prefWidth="212.0" styleClass="login" stylesheets="@style.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warningLabel" layoutX="-32.0" layoutY="143.0" text="warningLabel" textFill="#ff6a6a" />
+            <Label layoutX="7.0" layoutY="212.0" text="not register yes?" textFill="WHITE" />
+            <Hyperlink focusTraversable="false" layoutX="94.0" layoutY="209.0" onAction="#handleGoToSignUpButton" text="Create an Account" textFill="#20df7f" />
+         </children>
+      </Pane>
+      <Label layoutX="293.0" layoutY="295.0" />
+      <Button focusTraversable="false" layoutX="26.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleMakerButton" styleClass="edit-button" stylesheets="@style.css" text="About">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

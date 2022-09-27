@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #202A35;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SignupController">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0" styleClass="register" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="nameTextField" focusTraversable="false" layoutX="50.0" layoutY="82.0" prefHeight="30.0" prefWidth="300.0" promptText="First Name" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="lastnameTextField" focusTraversable="false" layoutX="50.0" layoutY="132.0" prefHeight="30.0" prefWidth="300.0" promptText="Last Name" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="usernameSignupTextField" focusTraversable="false" layoutX="50.0" layoutY="184.0" prefHeight="30.0" prefWidth="300.0" promptText="Username" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <PasswordField fx:id="passwordSignupTextField" focusTraversable="false" layoutX="50.0" layoutY="239.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <PasswordField fx:id="confirmPasswordTextField" focusTraversable="false" layoutX="50.0" layoutY="292.0" prefHeight="30.0" prefWidth="300.0" promptText="Confirm Password" styleClass="username" stylesheets="@style.css">
+               <font>
+                  <Font name="Ebrima" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <DatePicker fx:id="dateOfBirthDatePicker" focusTraversable="false" layoutX="50.0" layoutY="346.0" prefHeight="30.0" prefWidth="300.0" promptText="Date of Birth" stylesheets="@style.css" />
+            <Button layoutX="50.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="27.0" prefWidth="300.0" styleClass="login" stylesheets="@style.css" text="Register">
+               <font>
+                  <Font name="Ebrima" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warningSignup" layoutX="50.0" layoutY="394.0" text="warningSignup" textFill="#ff6a6a" />
+            <Label layoutX="50.0" layoutY="39.0" text="SIGN UP" textFill="#697b90">
+               <font>
+                  <Font name="Ebrima Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button focusTraversable="false" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleHomeButton" styleClass="confirm-button" stylesheets="@style.css" text="Back">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

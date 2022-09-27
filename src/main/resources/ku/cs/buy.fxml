@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="140.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.BuyProductController">
+    <children>
+        <VBox layoutX="14.0" layoutY="33.0" />
+        <Label fx:id="total" layoutX="14.0" layoutY="14.0" text="Total Price: n">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="15.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleConfirmButton" styleClass="confirm-button" stylesheets="@style.css" text="Confirm">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="235.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleBackButton" stylesheets="@style.css" text="Back" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #202A35;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.StoreController">
+   <children>
+      <Label layoutX="337.0" layoutY="231.0" text="Store Name" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="290.0" layoutY="283.0" prefHeight="35.0" prefWidth="233.0">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font></TextField>
+      <Button focusTraversable="false" layoutX="370.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleConfirmButton" styleClass="confirm-button" stylesheets="@style.css" text="Confirm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

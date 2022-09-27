@@ -1,0 +1,101 @@
+.menu-button{
+    -fx-background-radius: 10;
+    -fx-background-color: white;
+}
+
+.product-box{
+    -fx-background-radius: 1;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E8E8;
+    -fx-effect:  dropShadow(three-pass-box, rgba(0,0,0,0.1), 5.0, 0.0, 0.0 , 5.0);
+}
+
+.product-box2{
+    -fx-background-radius: 1;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E8E8;
+}
+
+.header{
+    -fx-background-color: #202A35;
+}
+
+.textarea {
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+}
+
+.button{
+    -fx-background-color: #202A35;
+    -fx-background-radius: 5;
+}
+
+.add-button{
+    -fx-border-color: #E8E8E8;
+}
+
+.buy-button{
+    -fx-background-radius: 2;
+    -fx-background-color: #D41830;
+}
+
+.confirm-button{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E8E8;
+    -fx-border-radius: 5;
+}
+
+.right-button{
+    -fx-position: relative;
+    -fx-alignment: bottom-right;
+}
+
+.edit-button{
+    -fx-background-color: #E8E8E8;
+    -fx-border-radius: 180;
+}
+
+.maker-box{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: black ;
+    -fx-border-radius: 10;
+}
+
+.username{
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+
+.login{
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: #20DF7F;
+    -fx-effect:  dropShadow(three-pass-box, rgba(0,0,0,0.1), 5.0, 0.0, 0.0 , 5.0);
+}
+
+.register{
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect:  dropShadow(three-pass-box, rgba(0,0,0,0.1), 5.0, 0.0, 0.0 , 5.0);
+}
+
+.save{
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: #20DF7F;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view{
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect:  dropShadow(three-pass-box, rgba(0,0,0,0.1), 5.0, 0.0, 0.0 , 5.0);
+}

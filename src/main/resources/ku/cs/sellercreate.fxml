@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SellerCreateController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" styleClass="header" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Sport" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="12.5" />
+               </HBox.margin>
+            </Label>
+            <Label text="Market" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="12.5" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="366.0" layoutY="49.0" text="Product Name: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productNameTextField" focusTraversable="false" layoutX="499.0" layoutY="50.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <ImageView fx:id="productShowImageView" fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+            <Button focusTraversable="false" layoutX="122.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleUploadButton" styleClass="edit-button" stylesheets="@style.css" text="Upload Picture">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="364.0" layoutY="101.0" text="Price: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productPriceTextField" focusTraversable="false" layoutX="417.0" layoutY="102.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Label layoutX="362.0" layoutY="167.0" text="Amount: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productAmountTextField" focusTraversable="false" layoutX="443.0" layoutY="168.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Button focusTraversable="false" layoutX="366.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleUpdateButton" stylesheets="@style.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="566.0" layoutY="458.0" mnemonicParsing="false" onAction="#handleResetButton" styleClass="buy-button" stylesheets="@style.css" text="Reset" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="732.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleBackButton" stylesheets="@style.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="362.0" layoutY="289.0" text="Description: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productDescriptionTextField" focusTraversable="false" layoutX="365.0" layoutY="323.0" prefHeight="102.0" prefWidth="250.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Label layoutX="362.0" layoutY="237.0" text="Set Low Amount:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lowAmountTextField" layoutX="512.0" layoutY="238.0" />
+            <Label fx:id="warningLabel" layoutX="78.0" layoutY="361.0" text="Warning Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
